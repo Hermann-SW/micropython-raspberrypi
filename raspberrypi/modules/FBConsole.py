@@ -1,4 +1,7 @@
-import gpu
+try:
+    import gpu
+except ImportError:
+    pass
 import framebuf
 import uio
 
@@ -15,7 +18,10 @@ class RPiScreen(framebuf.FrameBuffer):
 
 class FBConsole(uio.IOBase):
     def __init__(self, framebuf, bgcolor=0, fgcolor=-1, width=-1, height=-1, readobj=None):
-        self.readobj = readobj
+        try:
+            self.readobj = readobj
+        except NameError:
+            pass
         self.fb = framebuf
         if width > 0:
             self.width=width
