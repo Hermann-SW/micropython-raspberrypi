@@ -1,3 +1,10 @@
+This fork is only intended to make "raspberrypi/modules/FBConsole.py" usable (again) for ESP MicroPython with SSD1306 Oled. Main usecase is MicroPython REPL redirection to Oled:
+
+    from FBConsole import FBConsole
+    console = FBConsole(oled)
+    os.dupterm(console)
+
+
 # micropython-raspberrypi
 
 MicroPython on bare metal Raspberry Pi Zero / Zero W
