@@ -1,5 +1,9 @@
 fork-mission-statement
 ======================
+This fork is terminated, boochow now has dedicated repo for FBConsole:
+[https://github.com/boochow/FBConsole](https://github.com/boochow/FBConsole)
+
+
 This fork is only intended to make [raspberrypi/modules/FBConsole.py](raspberrypi/modules/FBConsole.py) usable (again) for ESP MicroPython with SSD1306 Oled. Main usecase is MicroPython REPL redirection to Oled:
 
     import machine, ssd1306
